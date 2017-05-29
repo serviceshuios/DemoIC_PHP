@@ -6,9 +6,9 @@ function connection(){
 		$host = "127.0.0.1";
 		$dbname = "super_projet_ecommerce";
 		$user = "root";
-		$password = "";
-		$bdd = new PDO('mysql:host=$host;dbname=$dbname;charset=utf8', '$user', '$password');
-		return 
+		$password = "root";
+		$bdd = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8", "$user", "$password");
+		return $bdd;
 	}
 	catch(Exception $e)
 	{
@@ -34,9 +34,8 @@ function getAllProductsPerCategorie($categorie){
 
 function getAllDataFromTable($table){
 	if(empty($table)){
-		$query = 'SELECT * FROM '$table;
+		$query = 'SELECT * FROM '.$table;
 		return getAllDataFromQuery($query);
-		}
 	}
 	return array();
 }
@@ -45,7 +44,7 @@ function getAllDataFromQuery($query){
 	$bdd = connection();
 
 	// On récupère tout le contenu de la table jeux_video
-	$reponse = $bdd->query('SELECT * FROM '$table);
+	$reponse = $bdd->query($query);
 
 	// On affiche chaque entrée une à une
 	return $reponse->fetchAll();
