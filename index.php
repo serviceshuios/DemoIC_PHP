@@ -50,7 +50,7 @@
   <!-- Contenu principal -->
   <div class="row content">
     <div class="col-sm-3">
-      <?php include "includes/navbar.php";?>
+      <?php include "includes/sidebar.php";?>
     </div>
     <div class="col-sm-9">
       La super page d'accueil :D
