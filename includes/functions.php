@@ -20,6 +20,14 @@ function getAllProducts(){
 	return getAllDataFromTable("produit");
 }
 
+function renderProduct($product) {
+  $html = '';
+  $html .= $product['reference'] . '<br />';
+  $html .= '<img src="' . $product['photo'] . '" /><br />';
+  $html .= 'Seulement <b>' .  $product['prix'] . '</b><br />';
+  $html .= '<a href="addtocart?id=' . $product['reference'] . '">Ajouter à mon panier</a>';
+}
+
 function getAllCategories(){
 	return getAllDataFromTable("categorie");
 }
