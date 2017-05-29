@@ -1,6 +1,6 @@
 <?php
 
-var $htmlCategories;
+$htmlCategories = "";
 session_start();
 
 $categories = getAllCategories;
