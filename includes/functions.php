@@ -17,11 +17,11 @@ function connection(){
 	}	
 }
 function getAllProducts(){
-	$produits = getAllDataFromTable("produit");
+	return getAllDataFromTable("produit");
 }
 
 function getAllCategories(){
-	$categories = getAllDataFromTable("categorie");
+	return getAllDataFromTable("categorie");
 }
 
 function getAllProductsPerCategorie($categorie){
