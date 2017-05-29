@@ -43,14 +43,14 @@
 </head>
 <body>
   <div class="container">
-    <?php include "/include/header.php";?>
+    <?php include "includes/header.php";?>
   </div>
   
   <div class="container text-center">
   <!-- Contenu principal -->
   <div class="row content">
     <div class="col-sm-3">
-      <?php include "/include/navbar.php";?>
+      <?php include "includes/sidebar.php";?>
     </div>
     <div class="col-sm-9">
       La super page d'accueil :D
