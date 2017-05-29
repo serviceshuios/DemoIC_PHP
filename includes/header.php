@@ -1,4 +1,6 @@
 <?php
+
+var $htmlCategories;
 session_start();
 
 $categories = getAllCategories;
