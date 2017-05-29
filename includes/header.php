@@ -1,12 +1,12 @@
 <?php
 session_start();
-/*
-$categories = getAllDataFromTable("vategories");
+
+$categories = getAllCategories;
 
 foreach ($categories as $categorie){
-	$htmlCategories .= '<a href="">'.$categorie.'&nbsp;';
+	$htmlCategories .= '<a href="#">'.$categorie.'&nbsp;';
 }
-*/
+
 ?>
 <table width="100%">
 	<tr>
@@ -36,8 +36,7 @@ foreach ($categories as $categorie){
 				<input type="text" id="search" name="search">&nbsp;<input type="submit">
 			</form>&nbsp;
 			<a href="/">Home</a>
-			<a href="/">Promotions</a>
-			<a href="/">Sélection</a>
+			<?=$htmlCategories;?>
 		</td>
 	</tr>
 </table>
