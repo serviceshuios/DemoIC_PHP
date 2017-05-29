@@ -43,7 +43,7 @@ function getAllProductsPerCategorie($categorie){
 }
 
 function getAllDataFromTable($table){
-	if(empty($table)){
+	if(!empty($table)){
 		$query = 'SELECT * FROM '.$table;
 		return getAllDataFromQuery($query);
 	}

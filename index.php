@@ -42,6 +42,7 @@
   </style>
 </head>
 <body>
+  <?php require('includes/functions.php');?>
   <div class="container">
     <?php include "includes/header.php";?>
   </div>
